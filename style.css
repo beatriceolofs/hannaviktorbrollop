@@ -68,7 +68,7 @@ font-family:'EB Garamond', serif;
     justify-content: center;
     align-content: center;
     text-align: center;
-    background-image: url(img/first.jpg);
+    background-image: url(first.jpg);
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -149,7 +149,7 @@ font-family:'EB Garamond', serif;
 }
 
 .third {
-    background-image: url(img/third.jpg);
+    background-image: url(third.jpg);
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -218,7 +218,7 @@ font-family:'EB Garamond', serif;
 }
 
 .fourth .img {
-    background-image: url(img/fourth.jpg);
+    background-image: url(fourth.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
