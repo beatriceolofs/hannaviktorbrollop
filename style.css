@@ -1,1032 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,700;1,500&display=swap');
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family:'EB Garamond', serif;
+
+}
+
 @font-face {
-    font-family;
-    src: url(../fonts/dk_lemon_yellow_sun.otf)
+    font-family: trendsetter sans-serif;
+    src: url(trendsetter.ttf);
 }
 
-@media only screen and (max-width:600px) {
-    parallax {
-        background-attachment: scroll;
-    }
-    
-    .kundkorg {
-        width: 70%;
-    }
-    
-    .popup{
-        width: 70%;
-    }
+/* CSS HEX 
+--smoky-black: #190e0dff;
+--beaver: #a48775ff;
+--floral-white: #fcfbf2ff;
+--eggshell: #efecdcff;
+--khaki-web: #b2a686ff;
+--ash-gray: #b5bca9ff;
+--bone: #cbd0bdff;
+--copper-penny: #ac6c71ff;
+--tuscany: #cba2a9ff;
+
+*/
+
+
+/* LOGIN */
+
+
+
+/* NAVIGATION BAR */
+
+.navbar{
+    background: #efecdcff;
+    padding: 1rem 4rem;
+    z-index: 1000;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
 }
 
-* {
-    margin: 0;
-    padding: 0;
+.navbar-brand{
+    font-family: trendsetter, sans-serif;
+    font-size: 2rem;
+    font-weight: 500;
 }
 
-html {
-    height: 100%;
+#navbarNav > ul > li:nth-child(n) > a{
+    color:#b2a686ff;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0 0.7rem;
 }
 
-/* Det som ska finnas på ALLA sidor */
+#navbarNav > ul > li:nth-child(n) > a:hover {
+    color: #190e0dff;
+}
 
-#header1 {
-    background-image: url(norrskenupp%C3%A5ner.png);
-    height: 95vh;
+/* FIRST */
+
+.first{
     width: 100%;
-    margin: auto;
-    max-height: 30%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    background-image: url(img/first.jpg);
     background-size: cover;
+    background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
-    background-attachment: fixed;
-    box-shadow: inset -50px 0px 100vh rgba(0, 0, 0, 0.4);
-
-}
-
-.hemknapp img {
-    width: 80px;
-    height: auto;
-    margin: 10px 10px 10px 15px;
-    float: left;
-}
-
-/* Meny */
-
-.menu img {
-    width: 40px;
-    padding-left: 10px; 
-}
-
-.nav {
-    text-align: right;
-    height: 70px;
-    float: right;
-    margin-top: 10px 
-}
-
-.menu {
-    margin: 0px 10px 0 0;
-}
-.menu li {
-    display: inline;
-}
-
-.menu li a:hover {
-    color: rgba(255, 255, 255, 0.54);
 }
 
 
-.menu a {
-    color: white;
-    text-decoration: none;
-    padding: 5px 10px;
-    font-family: DK lemon yellow sun, sans-serif;
-    font-size: 40px;
-    clear: right;
-}
-
-.nav label {
-    margin: 0 40px 0 0;
-    font-size: 30px;
-    line-height: 70px;
-    display: none;
-    width: 26px;
-    float: right;
-    color: white;
-    font-weight: 800;
-}
-
-#toggle {
-    display: none;
-}
-
-@media only screen and (max-width: 750px) {
-    .nav label {
-        display: block;
-        cursor: pointer;
-    }
-    .menu {
-        text-align: right;
-        width: 100%;
-        display: none;
-    }
-    
-    .menu a {
-        display: block;
-        margin: 0;
-        font-size: 25px;
-    }
-    
-    #toggle:checked + .menu {
-        display: block;
-    }
-    
-    .menu {
-        background-color: a
-    }
-}
-
-/* meny, slut */
-
-.bar {
-    width: 60%;
-    margin: auto;
-    margin-bottom: 30px;
-    margin-top: 20px;
-}
-
-
-.bar .ikoner {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-
-}
-
-.bar .ikoner2 img{
-    width: 100px;
-    max-width: 300px;
-    text-align: center;
-}
-
-/* Ovan, allt som ska finnas på alla sidor*/
-
-
-
-/* Hem */
-
-#header {
+.first-text{
     position: relative;
 }
 
-.storloggan img {
-    position: absolute;
-    left: 50%;
-    top: 25%;
-    margin-left: -19vh;
-    width: 350px;
-    height: auto;
-
-}
-
-/* Ovan, Hem*/
-
-
-
-/* Om oss*/
-
-#header2 {
-    background-image: url(omossbakgrund.png);
-    height: 100vh;
-    width: 100%;
-    margin: auto;
-    height: 50vh;
-    max-height: 30%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed;
-    box-shadow: inset -50px 0px 100vh rgba(0, 0, 0, 0.4);
-
-}
-
-.rubrik,
-h1 {
-    font-family: DK lemon yellow sun, sans-serif;
-    font-size: 70px;
-    color: white;
-    text-align: center center;
-    position: absolute;
-    left: 50%;
-    top: 20%;
-    margin-left: -8vh;
-    font-weight: lighter;
-}
-
-#omosstext {
-    width: 100%;
-    height: auto;
-    text-align: center;
-    background-color: white;
-    float: left;
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-
-}
-
-#omosstext p {
-    padding: 50px;
-    font-weight: lighter;
-}
-
-.foodtruck {
-    background-image: url(Foodtruck-06.png);
-    width: 100%;
-    margin-top: ;
-    height: 95vh;
-    max-height: 20%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    box-shadow: inset -50px 0px 100vh rgba(0, 0, 0, 0.4);
-}
-
-/* Kontakt */
-
-#header3 {
-    box-shadow: inset -50px 0px 100vh rgba(0, 0, 0, 0.4);
-    background-image: url(renbakgrund.png);
-    width: 100%;
-    margin: auto;
-    height: 50vh;
-    max-height: 30%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-
-}
-
-.rubrik3 h1 {
-    font-family: DK lemon yellow sun, sans-serif;
-    font-size: 70px;
-    color: white;
-    text-align: center center;
-    position: absolute;
-    left: 50%;
-    top: 18%;
-    margin-left: -9vh;
-    font-weight: lighter;
-}
-
-.platstider {
-    width: 50%;
-    float: left;
-}
-
-.platstider h2 {
-    font-family: DK lemon yellow sun, sans-serif;
-    font-size: 40px;
-    padding: 20px 20px 10px 40px;
-}
-
-.platstider p {
-    padding: 10px 10px 10px 40px;
-    font-size: 20px;
-    font-family: 'Roboto', sans-serif;
-
-}
-
-#login-box {
-    position: relative;
-    margin: 5% auto;
-    height: 400px;
-    background: #fff;
-
-}
-
-/* kontaktformulär */
-
-#footer3 {
-    box-sizing: border-box;
-}
-
-.element {
-    height: px;
-}
-
-
-h3 {
-    font-family: DK lemon yellow sun, sans-serif;
-    font-size: 40px;
-    padding: 0 0 10px 0;
-}
-
-input[type=text],
-select,
-textarea {
-    width: 100%;
-    padding: 12px;
-    box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    resize: vertical;
-    font-family: 'Roboto', sans-serif;
-}
-
-#knapp input[type=submit] {
-    font-family: DK lemon yellow sun, sans-serif;
-    font-size: 25px;
-    background-color: #427171;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-#knapp input[type=submit]:hover {
-    background-color: #345858;
-}
-
-.kontaktaoss {
-    font-family: 'Roboto', sans-serif;
+.first-text h2{
     text-transform: uppercase;
-    width: 50%;
-    top: 0 auto;
-    float: right;
-
-}
-
-#karta {
-    background-image: url(snazzy-image.png);
-    height: 70vh;
-    width: 100%;
-    background-position: center center;
-    background-size: cover;
-    background-attachment: fixed;
-    float: left;
-    box-shadow: inset 0px 6px 50px 0px rgba(0, 0, 0, 0.4);
-}
-
-
-@media only screen and (max-width:600px) {
-    .kontaktaoss {
-        width: 100%;
-    }
-    
-    .kontaktaoss h3 {
-        text-align: center;
-    }
-    
-    .platstider {
-        width: 100%;
-        padding-bottom: 30px;
-        text-align: center;
-    }
-}
-    
-    
-.clear::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-
-.element {
-    margin: 50px 30px 80px 30px;
-}
-
-/* slut kontaktformulär */
-
-
-
-/* Recept */
-
-#header4 {
-
-    background-image: url(Lapportenfromtornetr%C3%A4sk.png);
-    height: 100vh;
-    width: 100%;
-    margin: auto;
-    height: 50vh;
-    max-height: 30%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed;
-    box-shadow: inset -50px 0px 100vh rgba(0, 0, 0, 0.4);
-}
-
-.utvaldarecept {
-    font-family: DK lemon yellow sun, sans-serif;
-    font-size: 70px;
-    color: white;
-    text-align: center center;
-    position: absolute;
-    left: 50%;
-    top: 20%;
-    margin-left: 2vh;
-    font-weight: lighter;
-}
-
-.recept ol li {
-    font-size: 14px;
-    padding: 5px;
-}
-
-/* Halloumirecept */
-
-
-.bildhalloumi {
-    background-image: url(halloumi%20fries.png);
-    width: 100%;
-    height: 40vh;
-    max-height: 20%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed;
-    box-shadow: inset -50px 0px 100vh rgba(0, 0, 0, 0.4);
-}
-
-.bildhalloumi h2 {
-    font-family: DK lemon yellow sun, sans-serif;
-    font-size: 50px;
-    color: white;
-    font-weight: lighter;
-    position: absolute;
-    text-align: center;
-    left: 50%;
-    margin-left: -18vh;
-    margin-top: 12vh;
-    overflow: hidden;
-}
-
-.halloumifield {
-    border: none;
-    padding: 5% 5% 10% 5%;
-}
-
-.vänsterhalloumi {
-    width: 50%;
-    float: left;
-}
-
-.högerhalloumi {
-    width: 50%;
-    float: right;
-}
-
-@media only screen and (max-width:700px) {
-    .högerhalloumi {
-        width: 100%;
-    }
-    
-    .vänsterhalloumi {
-        width: 100%;
-    }
-}
-
-/* Halloumirecept */
-
-
-/* Souvasrecept */
-
-
-.souvasbild {
-    background-image: url(muurikkaabild.jpg);
-    width: 100%;
-    height: 40vh;
-    max-height: 20%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed;
-    float: left;
-    box-shadow: inset -50px 0px 100vh rgba(0, 0, 0, 0.4);
-}
-
-.souvasbild h2 {
-    font-family: DK lemon yellow sun, sans-serif;
-    font-size: 50px;
-    color: white;
-    font-weight: lighter;
-    position: absolute;
-    text-align: center;
-    left: 50%;
-    margin-left: -22vh;
-    margin-top: 14vh;
-    overflow: hidden;
-}
-
-.souvasfield {
-    border: none;
-    padding: 5% 5% 10% 5%;
-}
-
-.vänstersouvas {
-    float: left;
-    width: 50%;
-}
-
-.högersouvas {
-    float: right;
-    width: 50%;
-}
-
-@media only screen and (max-width:700px) {
-    .vänstersouvas {
-        width: 100%;
-    }
-    
-    .högersouvas {
-        width: 100%;
-    }
-    
-    
-}
-
-/* Souvasrecept */
-
-.recept h5 {
-    font-family: DK lemon yellow sun, sans-serif;
-    font-size: 30px;
-    padding: 5% 5% 3% 5%;
-}
-
-.recept h7 {
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-    padding: 5% 5% 5% 5%;
-}
-
-.recept ul {
-    font-family: 'Roboto', sans-serif;
-    font-size: 17px;
-    padding: 1% 5% 1% 5%;
-    list-style: none;
-}
-
-.recept ol {
-    font-family: 'Roboto', sans-serif;
-    font-size: 14px;
-    padding: 2% 5% 8% 7%;
-}
-
-.recept h6 {
-    font-family: DK lemon yellow sun, sans-serif;
-    font-size: 25px;
-    padding: 6% 5% 1% 5%;
-}
-
-
-
-/* Lingondryck */
-
-.lingonbild {
-    background-image: url(IMG_8522.jpg);
-    width: 100%;
-    height: 40vh;
-    max-height: 20%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed;
-    float: left;
-    box-shadow: inset -50px 0px 100vh rgba(0, 0, 0, 0.4);
-}
-
-.lingonbild h2 {
-    font-family: DK lemon yellow sun, sans-serif;
-    font-size: 50px;
-    color: white;
-    font-weight: lighter;
-    position: absolute;
-    text-align: center center;
-    overflow: hidden;
-    left: 50%;
-    margin-left: -10vh;
-    margin-top: 16vh;
-}
-
-.lingondricka {
-    border: none;
-    padding: 5% 5% 5% 5%;
-}
-
-.vänsterlingon {
-    width: 50%;
-    float: left;
-}
-
-.högerlingon {
-    width: 50%;
-    float: right;
-}
-
-@media only screen and (max-width:700px) {
-    .vänsterlingon {
-        width: 100%;
-    }
-    
-    .högerlingon {
-        width: 100%;
-    }
-
-}
-
-/* MATMENY */
-
-
-#header5 {
-    background-image: url(menybakgrund.png);
-    width: 100%;
-    margin: auto;
-    height: 50vh;
-    max-height: 30%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    box-shadow: inset -50px 0px 100vh rgba(0, 0, 0, 0.4);
-}
-
-.rubrik5 {}
-
-
-
-
-#listameny {
-    border: none;
-}
-
-#listameny ul {
-    text-align: center;
-    padding: 40px;
-}
-
-#listameny li {
-    display: inline;
-}
-
-#listameny a {
-    color: black;
-    text-decoration: none;
-    padding: 10px;
-    font-family: DK lemon yellow sun, sans-serif;
-    font-size: 40px;
-    text-align: center center;
-}
-
-#listameny a:hover {
-    color: #2a7989;
-}
-
-/* rullar */
-
-#bildrullar {
-    background-image: url(kebab.png);
-    width: 100%;
-    margin: auto;
-    height: 30vh;
-    max-height: 30%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    box-shadow: inset -50px 0px 100vh rgba(0, 0, 0, 0.4);
-}
-
-#bildrullar h2 {
-    font-family: DK lemon yellow sun, sans-serif;
-    font-size: 50px;
-    color: white;
-    font-weight: lighter;
-    position: absolute;
-    text-align: center;
-    left: 50%;
-    margin-left: -11vh;
-    margin-top: 11vh;
-    overflow: hidden;
-}
-
-.rullar {
-    border: none;
-     padding: 6% 10% 6% 10%;
-    
-}
-
-#bildlangos {
-    background-image: url(langos.png);
-    width: 100%;
-    margin: auto;
-    height: 30vh;
-    max-height: 30%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    box-shadow: inset -50px 0px 100vh rgba(0, 0, 0, 0.4);
-    border: none;
-}
-
-#bildlangos h2 {
-    font-family: DK lemon yellow sun, sans-serif;
-    font-size: 50px;
-    color: white;
-    font-weight: lighter;
-    position: absolute;
-    text-align: center;
-    left: 50%;
-    margin-left: -8vh;
-    margin-top: 11vh;
-    overflow: hidden;
-}
-
-.langos {
-    padding: 6% 10% 6% 10%;
-    margin: 
-}
-
-
-.hjortronlangos {
-    width: 70%;
-    float: left;
-}
-
-.hjortronpris {
-    width: 30%;
-    float: right;
-    text-align: right;
-}
-
-.langositem {
-    font-family: DK lemon yellow sun, sans-serif;
-    width: 70%;
-    padding-bottom: 20px;
-    float: left;
-}
-
-.prislangos {
-    width: 30%;
-    float: right;
-    text-align: right;
-    
-}
-
-
-
-/* tillbehör */
-
-#bildtillbehör {
-    background-image: url(s%C3%B6tpotatis.png);
-    width: 100%;
-    margin: auto;
-    height: 30vh;
-    max-height: 30%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    box-shadow: inset -50px 0px 100vh rgba(0, 0, 0, 0.4);
-}
-
-#bildtillbehör h2 {
-    font-family: DK lemon yellow sun, sans-serif;
-    font-size: 50px;
-    color: white;
-    font-weight: lighter;
-    position: absolute;
-    text-align: center;
-    left: 50%;
-    margin-left: -8vh;
-    margin-top: 11vh;
-    overflow: hidden;
-
-}
-
-/* FRIES */
-
-.FRIES {
-    padding: 6% 10% 6% 10%;
-    border: none;
-}
-.rubrikfries h2 {
-    font-family: DK lemon yellow sun, sans-serif;
-    font-size: 45px;
-    width: 100%;
-    text-align: center;
-    padding-bottom: 20px;
-}
-
-.fries {
-    width: 50%;
-    float: left;
-}
-
-.prisfries {
-    width: 50%;
-    float: right;
-    text-align: right;
-}
-
-
-
-
-/* Dryck */
-
-#bilddryck {
-    background-image: url(lingondricka.png);
-    width: 100%;
-    margin: auto;
-    height: 30vh;
-    max-height: 30%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    box-shadow: inset -50px 0px 100vh rgba(0, 0, 0, 0.4);
-}
-
-#bilddryck h2 {
-    font-family: DK lemon yellow sun, sans-serif;
-    font-size: 50px;
-    color: white;
-    font-weight: lighter;
-    position: absolute;
-    text-align: center;
-    left: 50%;
-    margin-left: -8vh;
-    margin-top: 11vh;
-    overflow: hidden;
-}
-
-.dryck {
-    padding: 6% 5% 6% 5%;
-    border: none;
-    
-}
-
-.dryckpris {
-    width: 50%;
-    float: right;
-    text-align: right;
-}
-
-.drycker {
-    width: 50%;
-    float: left;
-}
-.dryck h4 {
-    font-family: DK lemon yellow sun, sans-serif;
-    font-size: 20px;
-    color: #436870;
-    font-weight: lighter;
-}
-
-
-
-
-
-/* VARUKORG */
-
-#header6 {
-    background-image: url(IMG_71969.jpg);
-     width: 100%;
-    margin: auto;
-    height: 50vh;
-    max-height: 30%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    box-shadow: inset -50px 0px 100vh rgba(0, 0, 0, 0.4);
-}
-
-.storvarukorg img {
-    position: absolute;
-    left: 50%;
-    top: 15%;
-    margin-left: -10vh;
-    width: 200px;
-    height: auto;   
-}
-
-
-.köprullar {
-    width: 65%;
-    float: left;
-    font-family: 'Roboto', sans-serif;
-    border: none;
-}
-
-#varor {
-    padding: 5px 2px 5px 5px;
-    margin-left 100px;
-    font-family: 'Roboto', sans-serif;
-}
-.köprullar ul {
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-    font-weight: 300;
-    padding: 20px;
-    list-style: none;
-    
-}
-
-.köprullar h2 {
-    font-family: DK lemon yellow sun, sans-serif;
-    font-size: 40px;
-    padding: 20px 0 0 30px;
-}
-
-.köprullar label{
-    padding: 10px;
-}
-
-.köprullar input {
-    margin: 5px;
-}
-
-.köprullar h2:hover {
-    color: #2a7989;
-}
-
-.kontaktaoss4 {
-    font-family: 'Roboto', sans-serif;
-    text-transform: uppercase;
-    width: 30%;
-    margin: 0;
-    float: right;
-    border: none;
-    padding: 20px;
-}
-
-.varukorgen {
-    width: 100%;
-}
-
-@media only screen and (max-width:870px) {
-    .kontaktaoss4 {
-        width: 90%;
-        float: none;
-        position: relative;
-    }
-    
-    .köprullar {
-        width: 100%;
-    }
-}
-
-@media only screen and (max-width:600px) {
-    .köprullar label {
-        font-size: 14px;
-    }
-    
-    .köprullar input {
-        margin: 1.5px;
-    }
-    
-    #varor {
-        padding: 1px
-    }
-    
-    .köprullar ul {
-        padding: 3px 5px 0px 10px;
-    }
-}
-
-.rubrik8 h3 {
-    font-size: 50px;
-    text-align: center;
-    padding: 20px;
-}
-
-
-#knappen input[type=submit] {
-    font-family: DK lemon yellow sun, sans-serif;
-    font-size: 25px;
-    background-color: #357aae;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-#knappen input[type=submit]:hover {
-    background-color: #26597f;
-}
-
-/* tack */
-
-.rutatackbild {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.tackbild img {
-    width: 350px;
-    height: auto;
-    padding: 40px 20px 20px 20px;
-    
-}
-
-.tacktext {
-    padding: 10px 40px 70px 40px;
-}
-
-.tacktext h2 {
-    font-family: DK lemon yellow sun, sans-serif;
-    font-size: 60px;
-    text-align: center;
-}
-
-.tacktext h6 {
-    font-family: DK lemon yellow sun, sans-serif;
-    text-align: center;
-    font-size: 30px;
     font-weight: 200;
+    font-size: 1.7rem;
+    letter-spacing: 0.5rem;
+}
+
+.first-text h1{
+    font-family: trendsetter, sans-serif;
+    font-size: 6rem;
+    padding: 1.5rem;
+}
+
+.first h3{
+    font-size: 2em;
+    letter-spacing: 0.2rem;
+    color:  #a48775ff;
+    box-shadow: 4, 4, 4, 4;
+}
+
+.fa-chevron-down{
+    color: #190e0dff;
+}
+
+.fa-chevron-down:hover{
+    color: #efecdcff;
+    transition: 0.5s;
+}
+
+
+
+/* SECOND */
+
+.second {
+    background-color: #efecdcff;
+    padding: 3rem 4rem;
+}
+
+.second h1 {
+    font-family: trendsetter, sans-serif;
+    font-weight: 500;
+    font-size: 3rem;
+    color: #a48775ff;
+
+}
+
+.second p {
+    font-size: 1.2rem;
+}
+
+.second em {
+    font-size: 1.5rem;
+}
+
+
+/* THIRD */
+
+.third i {
+    color: #190e0dff;
+}
+
+.third h1{
+    font-family: trendsetter, sans-serif;
+    color: #a48775ff;
+    padding: 0.2em;
+    font-size: 4em;
+}
+
+.third {
+    background-image: url(img/third.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.third .one {
+    background: #efecdcff;
+    display: table-cell;
+    justify-content:first baseline;
+    align-items: center;
+    text-align: center;
+    padding: 4rem 1rem;
+    outline: 2px solid #b2a686ff;
+    outline-offset: -10px;
+
+}
+
+
+.third button a{
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.1em;
+    color:#190e0dff;
+    text-align: center;
+    font-weight: bold;
+    font-size: 0.8em;
+}
+
+.third button{
+    border-width: 0.2em;
+    border-color: #b2a686ff;
+    background-color: #efecdcff;
+    padding: 1em 1em 0 1em;
+    margin-top: 1em;
+}
+
+.third button:hover {
+    transition: 0.5s;
+    background-color: #b5bca9ff;;
+}
+
+
+
+/* FOURTH */
+
+.row .col-6 {
+    padding: 5em;
+    background-color: #190e0dff;;
+}
+
+.col-6 h1 {
+    font-family: trendsetter, sans-serif;
+    font-size: 3em;
+    color: #a48775ff;
+}
+
+.col-6 h2 {
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #a48775ff;
+}
+
+.col-6 p {
+    color: #efecdcff;;
+}
+
+.fourth .img {
+    background-image: url(img/fourth.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
