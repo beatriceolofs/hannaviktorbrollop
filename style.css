@@ -30,7 +30,9 @@ font-family:'EB Garamond', serif;
 
 .login p{
     font-size: 1.2rem;
-    font-weight: bold;
+    color: #190e0dff;
+    font-weight: 600;
+
 }
 
 .login .button{
@@ -57,7 +59,6 @@ font-family:'EB Garamond', serif;
     transition: 0.5s;
     background-color: #b5bca9ff;;
 }
-
 /* NAVIGATION BAR */
 
 .navbar{
@@ -79,6 +80,7 @@ font-family:'EB Garamond', serif;
     font-size: 1rem;
     font-weight: 500;
     padding: 0 0.7rem;
+    scroll-behavior: smooth;
 }
 
 #navbarNav > ul > li:nth-child(n) > a:hover {
@@ -224,24 +226,24 @@ font-family:'EB Garamond', serif;
 
 /* FOURTH */
 
-.row .col-6 {
+.row .fourth {
     padding: 5em;
-    background-color: #190e0dff;;
+    background-color: #190e0dff;
 }
 
-.col-6 h1 {
+.fourth h1 {
     font-family: trendsetter, sans-serif;
     font-size: 3em;
     color: #a48775ff;
 }
 
-.col-6 h2 {
+.fourth h2 {
     letter-spacing: 0.1em;
     text-transform: uppercase;
     color: #a48775ff;
 }
 
-.col-6 p {
+.fourth p {
     color: #efecdcff;;
 }
 
@@ -250,4 +252,48 @@ font-family:'EB Garamond', serif;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+}
+
+/* FIFTH */
+
+.fifth p {
+    color:  #efecdcff;
+    padding-top: 0.2rem;
+    padding-right: 15%;
+    font-size: 1.2rem;
+}
+
+.fifth .imgosa {
+    background-image: url(fifth.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 30%;
+    height: 46rem;
+}
+
+.fifth h3{
+    font-family: trendsetter;
+    font-size: 3rem;
+    color: #a48775ff;
+}
+
+.fifth {
+    padding: 0;
+}
+
+.fifth .col-8 {
+    padding: 0;
+    background-color:#190e0dff;;
+}
+
+.fifth h1 {
+    color: #a48775ff;
+    padding: 1rem;
+    font-size: 4rem;
+}
+
+.fifth a {
+    color: #b5bca9ff;
+    font-size: 1.2rem;
+    font-weight: 400;
 }
