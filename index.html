@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="sv">
+<html>
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
@@ -23,10 +23,10 @@
 
 
             <form class="login">
-                <label for="pswd"><p>Lösenord:</p></label>  
+                <label for="pswd"></label>  
                 <input type="password" id="pswd">
                 <input class="button" type="button" value="Logga in" onClick="checkPswd()">
-                <p>OBS! Skriv in lösenordet & klicka på "Logga in" för att gå vidare</p>
+                <p>Skriv in lösenordet & klicka på "Logga in" för att gå vidare</p>
             </form>
 
             
@@ -42,12 +42,13 @@
                 
                 if (password == confirmPassword) {
                     window.location.href="home.html";
-                }else {
+                } else {
                     alert("Lösenordet stämmer inte.");
                 }
 
-
             }
+
+            // fixa så att du måste trycka på logga in. Fungerar ej vid bara nedtryckning av enter
 
         </script>
 
