@@ -13,6 +13,7 @@ font-family:'EB Garamond', serif;
 }
 
 /* CSS HEX 
+
 --smoky-black: #190e0dff;
 --beaver: #a48775ff;
 --floral-white: #fcfbf2ff;
@@ -25,14 +26,13 @@ font-family:'EB Garamond', serif;
 
 */
 
-
 /* LOGIN */
 
 .login p{
-    font-size: 1.2rem;
+    font-size: 2vmin;
     color: #190e0dff;
     font-weight: 600;
-
+    padding: 10px;
 }
 
 .login .button{
@@ -70,7 +70,7 @@ font-family:'EB Garamond', serif;
 
 .navbar-brand{
     font-family: trendsetter;
-    font-size: 2rem;
+    font-size: 2.3vmax;
     font-weight: 500;
 }
 
@@ -113,13 +113,13 @@ font-family:'EB Garamond', serif;
 .first-text h2{
     text-transform: uppercase;
     font-weight: 200;
-    font-size: 1.7rem;
+    font-size: 4vmin;
     letter-spacing: 0.5rem;
 }
 
 .first-text h1{
     font-family: trendsetter;
-    font-size: 7rem;
+    font-size: 16vmin;
     padding: 1.5rem;
 }
 
@@ -151,17 +151,17 @@ font-family:'EB Garamond', serif;
 .second h1 {
     font-family: trendsetter, sans-serif;
     font-weight: 500;
-    font-size: 3rem;
+    font-size: 4vmax;
     color: #a48775ff;
 
 }
 
 .second p {
-    font-size: 1.2rem;
+    font-size: 1em;
 }
 
 .second em {
-    font-size: 1.5rem;
+    font-size: 1.5em;
 }
 
 
@@ -226,20 +226,25 @@ font-family:'EB Garamond', serif;
 
 /* FOURTH */
 
+.fourth {
+    padding: 0;
+}
+
 .row .fourth {
-    padding: 5em;
+    padding: 4em;
     background-color: #190e0dff;
 }
 
 .fourth h1 {
     font-family: trendsetter, sans-serif;
-    font-size: 3em;
+    font-size: 6vmin;
     color: #a48775ff;
 }
 
 .fourth h2 {
     letter-spacing: 0.1em;
     text-transform: uppercase;
+    font-size: 4vmin;
     color: #a48775ff;
 }
 
@@ -283,7 +288,7 @@ font-family:'EB Garamond', serif;
 
 .fifth .col-8 {
     padding: 0;
-    background-color:#190e0dff;;
+    background-color:#190e0dff;
 }
 
 .fifth h1 {
@@ -296,4 +301,43 @@ font-family:'EB Garamond', serif;
     color: #b5bca9ff;
     font-size: 1.2rem;
     font-weight: 400;
+}
+
+/* SIXTH */
+
+.sixth {
+    background-color:  #efecdcff;
+}
+
+.sixth i {
+    color:#190e0dff;
+}
+
+.sixth h2 {
+    font-family: trendsetter;
+    text-transform: capitalize;
+    font-size: 4rem;
+    padding: 2rem;
+}
+
+.sixth h3 {
+    text-transform: uppercase;
+    font-weight: 300;
+    text-align: center;
+    padding: 0.2rem;
+    color: #a48775ff;
+}
+
+.sixth .col-xs-6 {
+    background: #efecdcff;
+    display: table-cell;
+    justify-content:first baseline;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+}
+
+.sixth p {
+    color: #190e0dff;
+    padding: 1rem;
 }
