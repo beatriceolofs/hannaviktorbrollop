@@ -282,13 +282,10 @@ font-family:'EB Garamond', serif;
     color: #a48775ff;
 }
 
-.fifth {
-    padding: 0;
-}
-
-.fifth .col-8 {
+.fifth .col-sm-8{
     padding: 0;
     background-color:#190e0dff;
+    padding-left: 3%;
 }
 
 .fifth h1 {
