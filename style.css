@@ -273,12 +273,12 @@ font-family:'EB Garamond', serif;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center 30%;
-    height: 46rem;
+    height: 30rem;
 }
 
 .fifth h3{
     font-family: trendsetter;
-    font-size: 3rem;
+    font-size: 4vmax;
     color: #a48775ff;
 }
 
@@ -290,8 +290,9 @@ font-family:'EB Garamond', serif;
 
 .fifth h1 {
     color: #a48775ff;
-    padding: 1rem;
-    font-size: 4rem;
+    font-size: 5vmax;
+    padding-top: 0.5em;
+    font-family: trendsetter;
 }
 
 .fifth a {
