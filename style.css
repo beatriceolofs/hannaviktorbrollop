@@ -164,6 +164,36 @@ font-family:'EB Garamond', serif;
     font-size: 1.5em;
 }
 
+/* SECOND 2 */
+.second2 {
+    background-color: #190E0D;
+    padding: 3rem 4rem;
+}
+
+.second2 h1 {
+    font-family: trendsetter, sans-serif;
+    font-weight: 500;
+    font-size: 4vmax;
+    color: #A48775;
+
+}
+
+.second2 h3 {
+    text-transform: uppercase;
+    color: #B5BCA9;
+    font-weight: bold;
+    
+}
+
+.second2 p {
+    font-size: 1em;
+    color: #EFECDC;
+}
+
+.second2 em {
+    font-size: 1.5em;
+}
+
 
 /* THIRD */
 
