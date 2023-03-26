@@ -1,0 +1,384 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,700;1,500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'EB Garamond', serif;
+
+}
+
+@font-face {
+    font-family: trendsetter;
+    src: url(/trendsetter.ttf);
+}
+
+/* CSS HEX 
+
+--smoky-black: #190e0dff;
+--beaver: #a48775ff;
+--floral-white: #fcfbf2ff;
+--eggshell: #efecdcff;
+--khaki-web: #b2a686ff;
+--ash-gray: #b5bca9ff;
+--bone: #cbd0bdff;
+--copper-penny: #ac6c71ff;
+--tuscany: #cba2a9ff;
+
+*/
+
+/* LOGIN */
+
+.login p {
+    font-size: 2vmin;
+    color: #190e0dff;
+    font-weight: 600;
+    padding: 10px;
+}
+
+.login .button {
+    border-width: 0.2em;
+    border-color: #b2a686ff;
+    background-color: #efecdcff;
+    padding: 0.2em;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.login .button:hover {
+    transition: 0.5s;
+    background-color: #b5bca9ff;
+}
+
+#pswd {
+    padding: 0.3em;
+    background-color: #efecdcff;
+    border-color: #b2a686ff;
+}
+
+#pswd:hover {
+    transition: 0.5s;
+    background-color: #b5bca9ff;
+}
+
+/* NAVIGATION BAR */
+
+.navbar {
+    background: #efecdcff;
+    height: 9vh;
+    padding: 10px;
+    z-index: 1000;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
+}
+
+.navbar-brand {
+    font-family: trendsetter;
+    font-size: 3vmax;
+    font-weight: 500;
+}
+
+#navbarNav>ul>li:nth-child(n)>a {
+    color: #b2a686ff;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0 0.7rem;
+    scroll-behavior: smooth;
+}
+
+#navbarNav>ul>li:nth-child(n)>a:hover {
+    color: #190e0dff;
+}
+
+/* FIRST */
+
+.first {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    background-image: url(first.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.first-text {
+    position: relative;
+}
+
+.first-text h2 {
+    text-transform: uppercase;
+    font-weight: 200;
+    font-size: 4vmin;
+    letter-spacing: 0.5rem;
+}
+
+.first-text h1 {
+    font-family: trendsetter;
+    font-size: 16vmin;
+    padding: 1.5rem;
+}
+
+.first h3 {
+    font-size: 2em;
+    letter-spacing: 0.2rem;
+    color: #a48775ff;
+    box-shadow: 4, 4, 4, 4;
+}
+
+.fa-chevron-down {
+    color: #190e0dff;
+}
+
+.fa-chevron-down:hover {
+    color: #efecdcff;
+    transition: 0.5s;
+}
+
+
+
+/* SECOND */
+
+.second {
+    background-color: #efecdcff;
+    padding: 3rem 4rem;
+}
+
+.second h1 {
+    font-family: trendsetter, sans-serif;
+    font-weight: 500;
+    font-size: 4vmax;
+    color: #a48775ff;
+
+}
+
+.second p {
+    font-size: 1em;
+}
+
+.second em {
+    font-size: 1.5em;
+}
+
+/* SECOND 2 */
+.second2 {
+    background-color: #190E0D;
+    padding: 3rem 4rem;
+}
+
+.second2 h1 {
+    font-family: trendsetter, sans-serif;
+    font-weight: 500;
+    font-size: 4vmax;
+    color: #A48775;
+
+}
+
+.second2 h3 {
+    text-transform: uppercase;
+    color: #B5BCA9;
+    font-weight: bold;
+
+}
+
+.second2 p {
+    font-size: 1em;
+    color: #EFECDC;
+}
+
+.second2 em {
+    font-size: 1.5em;
+}
+
+
+/* THIRD */
+
+.third i {
+    color: #190e0dff;
+}
+
+.third h1 {
+    font-family: trendsetter, sans-serif;
+    color: #a48775ff;
+    padding: 0.2em;
+    font-size: 4em;
+}
+
+.third {
+    background-image: url(third.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.third .one {
+    background: #efecdcff;
+    display: table-cell;
+    justify-content: first baseline;
+    align-items: center;
+    text-align: center;
+    padding: 4rem 1rem;
+    outline: 2px solid #b2a686ff;
+    outline-offset: -10px;
+
+}
+
+
+.third button a {
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.1em;
+    color: #190e0dff;
+    text-align: center;
+    font-weight: bold;
+    font-size: 0.8em;
+}
+
+.third button {
+    border-width: 0.2em;
+    border-color: #b2a686ff;
+    background-color: #efecdcff;
+    padding: 1em 1em 0 1em;
+    margin-top: 1em;
+}
+
+.third button:hover {
+    transition: 0.5s;
+    background-color: #b5bca9ff;
+    ;
+}
+
+
+
+/* FOURTH */
+
+.fourth {
+    padding: 0;
+}
+
+.row .fourth {
+    padding: 4em;
+    background-color: #190e0dff;
+}
+
+.fourth h1 {
+    font-family: trendsetter, sans-serif;
+    font-size: 6vmin;
+    color: #a48775ff;
+}
+
+.fourth h2 {
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-size: 4vmin;
+    color: #a48775ff;
+}
+
+.fourth p {
+    color: #efecdcff;
+    ;
+}
+
+.fourth .img {
+    background-image: url(fourth.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* FIFTH */
+
+.fifth {
+    height: 80vh;
+}
+
+.fifth p {
+    color: #efecdcff;
+    padding-top: 0.2rem;
+    padding-right: 15%;
+    font-size: 1.2rem;
+}
+
+.fifth .imgosa {
+    background-image: url(fifth.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 30%;
+}
+
+.fifth h3 {
+    font-family: trendsetter;
+    font-size: 4vmax;
+    color: #a48775ff;
+}
+
+.fifth .col-sm-8 {
+    padding: 0;
+    background-color: #190e0dff;
+    padding-left: 3%;
+}
+
+.fifth h1 {
+    color: #a48775ff;
+    font-size: 5vmax;
+    padding-top: 0.5em;
+    font-family: trendsetter;
+}
+
+.fifth a {
+    color: #b5bca9ff;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+/* SIXTH */
+
+.sixth {
+    background-color: #efecdcff;
+}
+
+.sixth i {
+    color: #190e0dff;
+}
+
+.sixth h2 {
+    font-family: trendsetter;
+    text-transform: capitalize;
+    font-size: 4rem;
+    padding: 2rem;
+}
+
+.sixth h3 {
+    text-transform: uppercase;
+    font-weight: 300;
+    text-align: center;
+    padding: 0.2rem;
+    color: #a48775ff;
+}
+
+.sixth .col-xs-6 {
+    background: #efecdcff;
+    display: table-cell;
+    justify-content: first baseline;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+}
+
+.sixth p {
+    color: #190e0dff;
+    padding: 1rem;
+}
+
+.formbtn button {
+    text-decoration: none;
+    background-color: #A48775;
+}
